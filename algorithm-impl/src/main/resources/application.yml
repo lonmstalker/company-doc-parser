@@ -1,0 +1,10 @@
+app:
+  properties:
+    archive-folder: ${ARCHIVE_FOLDER:archives}
+
+spring:
+  datasource:
+    url: jdbc:postgresql://${DATASOURCE_URL:localhost:5432}/parser
+    username: ${DATASOURCE_USERNAME:parser}
+    password: ${DATASOURCE_PASSWORD:parser}
+    driver-class-name: org.postgresql.Driver
